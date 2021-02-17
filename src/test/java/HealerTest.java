@@ -35,4 +35,10 @@ public class HealerTest {
     public void hasHealingType() {
         assertEquals(HealingType.DANDELLION, healer.getHealingType());
     }
+
+    @Test
+    public void canChangeHealingType(){
+        healer.setHealingType(HealingType.PARACETAMOL);
+        assertEquals(HealingType.PARACETAMOL, healer.getHealingType());
+    }
 }

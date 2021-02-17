@@ -27,6 +27,10 @@ public class Healer extends Person {
         return healingType;
     }
 
+    public void setHealingType(HealingType healingType) {
+        this.healingType = healingType;
+    }
+
     public int getHealthFromEnum(){
         return this.health += healerType.getHealth();
     }

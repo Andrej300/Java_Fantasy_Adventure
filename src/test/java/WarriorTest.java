@@ -34,6 +34,11 @@ public class WarriorTest {
         @Test public void hasWeaponType()
         {assertEquals(WeaponType.AXE, warrior.getWeaponType());}
 
+        @Test public void canChangeWeapon() {
+        warrior.setWeaponType(WeaponType.CLUB);
+        assertEquals(WeaponType.CLUB, warrior.getWeaponType());
+        }
+
 
 
     }

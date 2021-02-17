@@ -32,17 +32,19 @@ public class MagicianTest {
     public void hasSpellType() {
         assertEquals(SpellType.THUNDER, magician.getSpellType());
     }
-//    @Test
-//    public void canChangeSpell() {
-//
-//        assertEquals();
-//    }
+
+    @Test
+    public void canChangeSpell() {
+        magician.setSpellType(SpellType.FIREBALL);
+        assertEquals(SpellType.FIREBALL, magician.getSpellType());
+    }
     @Test
     public void hasCreatureType() {
         assertEquals(CreatureType.UNICORN, magician.getCreatureType());
     }
-//    @Test
-//    public void canChangeCreature() {
-//        assertEquals();
-//    }
+    @Test
+    public void canChangeCreature() {
+        magician.setCreatureType(CreatureType.DRAGON);
+        assertEquals(CreatureType.DRAGON, magician.getCreatureType());
+    }
 }
