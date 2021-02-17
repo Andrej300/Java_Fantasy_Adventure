@@ -47,17 +47,17 @@ The game will also have rooms to work through. Each room should either have some
 
 ## Extensions
 
-* Create a class for Room.
+* Create a class for game.Room.
 * Create an Enum called Exit, this should have 4 values (WEST, EAST, NORTH, SOUTH)
-* Room should have an array of exits which should create a random number of unique exit locations when initialised.
-* When a user chooses an exit it should take them to a new Room.
+* game.Room should have an array of exits which should create a random number of unique exit locations when initialised.
+* When a user chooses an exit it should take them to a new game.Room.
 * Create a class for Quest. This should have an array of Rooms to work through.
 * Quest should complete when the array of rooms is empty.
 
 
 ## Advanced Extensions
-* Create a Party class which should have an ArrayList of type `Person` and an int for treasure value.
-* Create method to add a Person to the Party.
+* Create a Party class which should have an ArrayList of type `game.Person` and an int for treasure value.
+* Create method to add a game.Person to the Party.
 * Create an interface ITreasure. This should have a getValue method defined.
 * Create some classes to implement ITreasure. These should have default value.
 * Create method that takes in treasure and adds value to party treasure.
