@@ -1,3 +1,6 @@
+import enums.CreatureType;
+import enums.MagicianType;
+import enums.SpellType;
 import game.Magician;
 import org.junit.Before;
 import org.junit.Test;
@@ -10,7 +13,7 @@ public class MagicianTest {
 
     @Before
     public void setUp() {
-        magician = new Magician("Gandalf", 8, magicianType.WIZARD, spellType.THUNDER, creatureType.UNICORN);
+        magician = new Magician("Gandalf", MagicianType.WIZARD, SpellType.THUNDER, CreatureType.UNICORN);
 
     }
     @Test
@@ -19,15 +22,15 @@ public class MagicianTest {
     }
     @Test
     public void hasHealthPoints() {
-        assertEquals(8, magician.getHealthPoints());
+        assertEquals(4, magician.getHealthFromEnum());
     }
     @Test
     public void hasMagicianType() {
-        assertEquals(magicianType.WIZARD, magician.getMagicianType());
+        assertEquals(MagicianType.WIZARD, magician.getMagicianType());
     }
     @Test
-    public void hasSpell() {
-        assertEquals(spellType.THUNDER, magician.getSpellType());
+    public void hasSpellType() {
+        assertEquals(SpellType.THUNDER, magician.getSpellType());
     }
 //    @Test
 //    public void canChangeSpell() {
@@ -35,8 +38,8 @@ public class MagicianTest {
 //        assertEquals();
 //    }
     @Test
-    public void hasCreature() {
-        assertEquals(creatureType.UNICORN, magician.getCreatureType());
+    public void hasCreatureType() {
+        assertEquals(CreatureType.UNICORN, magician.getCreatureType());
     }
 //    @Test
 //    public void canChangeCreature() {

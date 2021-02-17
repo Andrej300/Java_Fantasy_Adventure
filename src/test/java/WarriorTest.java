@@ -14,7 +14,7 @@ public class WarriorTest {
     
     @Before
     public void setUp(){
-        warrior = new Warrior("Gimli", 10, WarriorType.DWARF, WeaponType.AXE);
+        warrior = new Warrior("Gimli", WarriorType.DWARF, WeaponType.AXE);
     }
 
     @Test
@@ -22,11 +22,19 @@ public class WarriorTest {
             assertEquals("Gimli", warrior.getName());
         }
 
+
         @Test public void hasWarriorType()
         {assertEquals(WarriorType.DWARF, warrior.getWarriorType());}
 
+        @Test
+        public void hasHealth(){
+        assertEquals(8, warrior.getHealthFromEnum());
+        }
+
         @Test public void hasWeaponType()
         {assertEquals(WeaponType.AXE, warrior.getWeaponType());}
+
+
 
     }
 

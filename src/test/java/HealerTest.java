@@ -13,7 +13,7 @@ public class HealerTest {
 
     @Before
     public void setUp() {
-        healer = new Healer("Galadriel", 5, HealerType.CLERIC, HealingType.DANDELLION);
+        healer = new Healer("Galadriel", HealerType.CLERIC, HealingType.DANDELLION);
     }
 
     @Test
@@ -22,8 +22,8 @@ public class HealerTest {
     }
 
     @Test
-    public void hasHealthPoints(){
-        assertEquals(5, healer.getHealthPoints());
+    public void hasHealth(){
+        assertEquals(8, healer.getHealthFromEnum());
     }
 
     @Test

@@ -3,21 +3,30 @@ package game;
 import enums.CreatureType;
 import enums.MagicianType;
 import enums.SpellType;
+import enums.TreasureType;
+
+import java.util.ArrayList;
 
 public class Magician extends Person {
     private MagicianType magicianType;
     private SpellType spellType;
     private CreatureType creatureType;
+    private int health;
 
-    public Magician(String name, int health, ArrayList<Treasure> backpack, MagicianType magicianType, SpellType spellType, CreatureType creatureType) {
-        super(name, health, backpack);
+    public Magician(String name, MagicianType magicianType, SpellType spellType, CreatureType creatureType) {
+        super(name);
         this.magicianType = magicianType;
         this.spellType = spellType;
         this.creatureType = creatureType;
+        this.health = 0;
     }
 
     public MagicianType getMagicianType() {
         return magicianType;
+    }
+
+    public int getHealthFromEnum() {
+        return this.health += magicianType.getHealth();
     }
 
     public SpellType getSpellType() {
