@@ -42,8 +42,8 @@ public class Healer extends Person implements IPerformAction {
         return this.healerType.getHeal() + this.healingType.getHealing();
     }
 
-    public int performAction(IPerformAction action){
-       return target.getHealthFromEnum() - performer.getHealStrength();
+    public int performAction(Magician target){
+       return target.getHealthFromEnum() - this.getHealStrength();
     }
 
 }

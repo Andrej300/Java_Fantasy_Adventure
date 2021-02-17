@@ -1,2 +1,4 @@
-package actions;public interface IAttack {
+package actions;
+
+public interface IAttack {
 }
