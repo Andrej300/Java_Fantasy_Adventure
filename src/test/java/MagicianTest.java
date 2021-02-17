@@ -29,8 +29,17 @@ public class MagicianTest {
     public void hasSpell() {
         assertEquals(spellType.THUNDER, magician.getSpellType());
     }
+//    @Test
+//    public void canChangeSpell() {
+//
+//        assertEquals();
+//    }
     @Test
     public void hasCreature() {
         assertEquals(creatureType.UNICORN, magician.getCreatureType());
     }
+//    @Test
+//    public void canChangeCreature() {
+//        assertEquals();
+//    }
 }

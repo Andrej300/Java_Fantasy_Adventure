@@ -1,11 +1,15 @@
 package game;
 
+import enums.TreasureType;
+
+import java.util.ArrayList;
+
 public abstract class Person {
     private String name;
     private int health;
-    private ArrayList<Treasure> backpack;
+    private ArrayList<TreasureType> backpack;
 
-    public Person(String name, int health, ArrayList<Treasure> backpack) {
+    public Person(String name, int health, ArrayList<TreasureType> backpack) {
         this.name = name;
         this.health = health;
         this.backpack = backpack;
@@ -19,7 +23,7 @@ public abstract class Person {
         return health;
     }
 
-    public ArrayList<Treasure> getBackpack() {
+    public ArrayList<TreasureType> getBackpack() {
         return backpack;
     }
 
