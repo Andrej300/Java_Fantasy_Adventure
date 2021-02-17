@@ -1,6 +1,6 @@
-import enums.HealerType;
-import enums.HealingType;
+import enums.*;
 import game.Healer;
+import game.Magician;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -9,10 +9,13 @@ import static org.junit.Assert.assertEquals;
 public class HealerTest {
 
     Healer healer;
+    Magician magician;
 
     @Before
     public void setUp() {
         healer = new Healer("Galadriel", HealerType.CLERIC, HealingType.DANDELLION);
+        magician = new Magician("Gandalf", MagicianType.WIZARD, SpellType.THUNDER, CreatureType.UNICORN);
+
     }
 
     @Test
@@ -43,5 +46,11 @@ public class HealerTest {
     @Test
     public void getHealingStrength(){
         assertEquals(-10, healer.getHealStrength());
+    }
+
+    @Test
+    public void checkThatHealerCanHeal(){
+        healer.performAction(healer, magician);
+        assertEquals(14, magician.getCurrentHealth());
     }
 }

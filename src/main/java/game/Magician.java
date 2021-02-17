@@ -30,6 +30,10 @@ public class Magician extends Person {
         return this.health += magicianType.getHealth();
     }
 
+    public int getCurrentHealth(){
+        return this.health;
+    }
+
     public SpellType getSpellType() {
         return spellType;
     }
