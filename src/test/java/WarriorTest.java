@@ -18,18 +18,15 @@ public class WarriorTest {
     }
 
     @Test
-    public void hasName()
-        { assertEquals("Gimli", warrior.getName()); }
+    public void hasName() {
+            assertEquals("Gimli", warrior.getName());
+        }
 
         @Test public void hasWarriorType()
-        {assertEqulas(WarriorType.DWARF, warrior.getWarriorType);}
+        {assertEquals(WarriorType.DWARF, warrior.getWarriorType());}
 
         @Test public void hasWeaponType()
-        {assertEquals(WeaponType.AXE());}
-
-
-
-
+        {assertEquals(WeaponType.AXE, warrior.getWeaponType());}
 
     }
 
