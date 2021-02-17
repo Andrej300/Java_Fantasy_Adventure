@@ -1,5 +1,6 @@
 package game;
 
+import actions.IPerformAction;
 import enums.WarriorType;
 import enums.WeaponType;
 
@@ -32,6 +33,14 @@ public class Warrior extends Person {
     public int getHealthFromEnum() {
        return this.health += warriorType.getHealth();
     }
+
+    public int attackStrength() {
+        return this.warriorType.getDamage() + this.weaponType.getWeaponDamage();
+    }
+
+//    public int performAction(IPerformAction ){
+//        this.health = getHealthFromEnum -=
+//    }
 
 }
 

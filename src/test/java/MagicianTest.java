@@ -47,4 +47,8 @@ public class MagicianTest {
         magician.setCreatureType(CreatureType.DRAGON);
         assertEquals(CreatureType.DRAGON, magician.getCreatureType());
     }
+    @Test
+    public void hasAttackStrength() {
+        assertEquals(10, magician.attackStrength());
+    }
 }

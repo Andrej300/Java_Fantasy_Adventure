@@ -16,4 +16,8 @@ public enum MagicianType {
         return this.health;
     }
 
+    public int getDamage() {
+        return this.damage;
+    }
+
 }

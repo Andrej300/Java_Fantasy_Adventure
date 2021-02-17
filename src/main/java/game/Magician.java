@@ -1,5 +1,6 @@
 package game;
 
+import actions.IPerformAction;
 import enums.CreatureType;
 import enums.MagicianType;
 import enums.SpellType;
@@ -44,4 +45,10 @@ public class Magician extends Person {
     public void setCreatureType(CreatureType creatureType) {
         this.creatureType = creatureType;
     }
+
+    public int attackStrength() {
+        return this.magicianType.getDamage() + this.spellType.getSpellDamage();
+    }
+
+
 }

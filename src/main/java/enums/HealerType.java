@@ -15,8 +15,13 @@ public enum HealerType {
             this.damage = damage;
         }
 
-            public int getHealth(){
+        public int getHealth() {
             return this.health;
-            }
+        }
+
+        public int getHeal() {
+            return this.damage;
+        }
+
 
 }

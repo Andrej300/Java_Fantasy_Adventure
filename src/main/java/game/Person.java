@@ -23,5 +23,14 @@ public abstract class Person {
         return backpack;
     }
 
+    public void getTreasure(TreasureType treasureType) {
+        this.backpack.add(treasureType);
+    }
+
+    public int getNumberOfTreasures(){
+        return backpack.size();
+    }
+
+
 }
 

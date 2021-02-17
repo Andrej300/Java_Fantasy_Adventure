@@ -10,4 +10,8 @@ public enum HealingType {
     HealingType(int heal){
         this.heal = heal;
     }
+
+    public int getHealing() {
+        return this.heal;
+    }
 }

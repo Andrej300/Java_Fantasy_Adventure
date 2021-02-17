@@ -17,4 +17,8 @@ public enum WarriorType {
     public int getHealth() {
         return this.health;
     }
+
+    public int getDamage() {
+        return this.damage;
+    }
 }

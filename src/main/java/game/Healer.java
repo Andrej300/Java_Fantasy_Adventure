@@ -35,4 +35,8 @@ public class Healer extends Person {
         return this.health += healerType.getHealth();
     }
 
+    public int getHealStrength(){
+        return this.healerType.getHeal() + this.healingType.getHealing();
+    }
+
 }

@@ -40,4 +40,8 @@ public class HealerTest {
         healer.setHealingType(HealingType.PARACETAMOL);
         assertEquals(HealingType.PARACETAMOL, healer.getHealingType());
     }
+    @Test
+    public void getHealingStrength(){
+        assertEquals(-10, healer.getHealStrength());
+    }
 }
